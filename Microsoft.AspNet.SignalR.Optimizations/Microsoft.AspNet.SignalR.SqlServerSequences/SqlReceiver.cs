@@ -21,7 +21,7 @@ namespace Microsoft.AspNet.SignalR.SqlServerSequences
         private readonly IDbProviderFactory _dbProviderFactory;
 
         private long? _lastPayloadId = null;
-        private string _maxIdSql = "SELECT [PayloadId] FROM [{0}].[{1}_Id]";
+        private string _maxIdSql = "SELECT [PayloadId] FROM FROM SYS.SEQUENCES WHERE NAME = 'SEQ_{1}_Id' AND SCHEMA_ID = SCHEMA_ID('{0}')";
         private string _selectSql = "SELECT [PayloadId], [Payload], [InsertedOn] FROM [{0}].[{1}] WHERE [PayloadId] > @PayloadId";
         private ObservableDbOperation _dbOperation;
         private volatile bool _disposed;

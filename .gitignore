@@ -1,0 +1,8 @@
+﻿################################################################################
+# Ce fichier .gitignore a été automatiquement créé par Microsoft(R) Visual Studio.
+################################################################################
+
+/Microsoft.AspNet.SignalR.Optimizations/Microsoft.AspNet.SignalR.SqlServerSequences/bin/Debug
+/Microsoft.AspNet.SignalR.Optimizations/Microsoft.AspNet.SignalR.SqlServerSequences/obj/Debug
+/Microsoft.AspNet.SignalR.Optimizations/packages
+/Microsoft.AspNet.SignalR.Optimizations/.vs/Microsoft.AspNet.SignalR.SqlServer.Optimizations/v15

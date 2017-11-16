@@ -36,7 +36,8 @@ namespace Microsoft.AspNet.SignalR.SqlServerSequences
             }
 
             return insertDml.Replace("[SignalR]", String.Format(CultureInfo.InvariantCulture, "[{0}]", SqlMessageBus.SchemaName))
-                            .Replace("[Messages_0", String.Format(CultureInfo.InvariantCulture, "[{0}", tableName));
+                            .Replace("[Messages_0", String.Format(CultureInfo.InvariantCulture, "[{0}", tableName))
+                            .Replace("[SEQ_Messages_0", String.Format(CultureInfo.InvariantCulture, "[SEQ_{0}", tableName));
         }
 
         public Task Send(IList<Message> messages)
